@@ -3,7 +3,7 @@ import { getFirestore } from "firebase/firestore";
 import { getAuth, GoogleAuthProvider, GithubAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDhOUF8caxGnuVR_vnhHhaKW0H-OQUl_r4",
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
   authDomain: "novu-chat.firebaseapp.com",
   projectId: "novu-chat",
   storageBucket: "novu-chat.appspot.com",
