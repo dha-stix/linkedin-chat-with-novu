@@ -43,7 +43,7 @@ export default function PostBox({
 				body: JSON.stringify({
 					type: "like",
 					name: user.name,
-					image: user.image,
+					id: user.id,
 					subscriberID: post.author_id,
 					content: "like",
 				}),

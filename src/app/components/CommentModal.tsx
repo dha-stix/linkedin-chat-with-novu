@@ -76,7 +76,7 @@ export default function CommentModal({
 				body: JSON.stringify({
 					type: "comment",
 					name: user.name,
-					image: user.image,
+					id: user.id,
 					subscriberID: authorID,
 					content: newComment,
 				}),
