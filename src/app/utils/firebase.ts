@@ -4,14 +4,13 @@ import { getAuth, GoogleAuthProvider, GithubAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY!,
-  authDomain: "novu-chat.firebaseapp.com",
-  projectId: "novu-chat",
-  storageBucket: "novu-chat.appspot.com",
-  messagingSenderId: "376513346025",
-  appId: "1:376513346025:web:4a09673f999a77e9a4f378",
-  measurementId: "G-4DF616HTLV"
+  authDomain: "novu-chat-f3073.firebaseapp.com",
+  projectId: "novu-chat-f3073",
+  storageBucket: "novu-chat-f3073.appspot.com",
+  messagingSenderId: "687624072813",
+  appId: "1:687624072813:web:020b00454a3e7786fcd964",
+  measurementId: "G-DX6NWT9DKC"
 };
-
 const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0];
 const db = getFirestore(app);
 const auth = getAuth(app);
